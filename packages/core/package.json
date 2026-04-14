@@ -39,13 +39,21 @@
     "preview": "vite preview",
     "lint": "eslint --fix src/*.{ts,vue} && eslint --fix src/**/*.{ts,vue}",
     "format": "prettier -w src/*.{ts,vue} && prettier -w src/**/*.{ts,vue}",
-    "fix": "pnpm format && pnpm lint"
+    "fix": "pnpm format && pnpm lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@babylonjs/core": "^6.25.0",
     "vue": "^3.3.6"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.15",
+    "@storybook/addon-interactions": "^8.6.15",
+    "@storybook/blocks": "^8.6.15",
+    "@storybook/test": "^8.6.15",
+    "@storybook/vue3": "^8.6.15",
+    "@storybook/vue3-vite": "^8.6.15",
     "@types/node": "^20.8.8",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
@@ -55,6 +63,7 @@
     "eslint-plugin-vue": "^9.18.0",
     "prettier": "^3.0.3",
     "sass": "^1.69.4",
+    "storybook": "^8.6.15",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
     "vite-plugin-dts": "^3.6.1",
